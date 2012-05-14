@@ -6,7 +6,8 @@
   <meta name="case" value="500/500" media="only screen and (min-width:0)"/>
   <meta name="case" value="700/700" media="only screen and (min-width:500px)"/>
   <meta name="case" value="1024/1024" media="only screen and (min-width:700px)"/>
-<title>JS Bin</title>
+<title>MetaVar - Polyfill</title>
+<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
 <style>
   /* Webkit hack - see http://bit.ly/zucsPo */
   @media screen and (max-width:0) {
@@ -18,11 +19,21 @@
   @media screen and (max-width:700px) {
     .foo { }
   }
+  
+  /* Demo stylings */
+  body{
+  	text-align: center;
+	font-family:Helvetica,Arial,sans-serif;
+  }
+  h1{
+	font-family: 'Kaushan Script', cursive;
+  }
+  img{display:block;margin: 0 auto;}
 </style>
 </head>
 <body>
   <h1>Meta-Variables Polyfill Demo</h1>
-  <p>Resize the browser to see the kitty change! See <a href="https://github.com/pci/metavar_polyfill">here</a> for details and source.</p>
+  <p>Resize the browser to see the responsive nature kick in (it might take a little time to change as it load the next picture). See <a href="https://github.com/pci/metavar_polyfill">here</a> for details and source. Made by <a href="http://twitter.com/philingrey">@philingrey</a></p>
   <img width='75%' src="http://placekitten.com/{case}/">
   <script>
   /* MIT license - http://pci.mit-license.org */
