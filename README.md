@@ -1,6 +1,6 @@
 ## Intro
 
-This is a polyfill to an responsive image proposal by @MattWilcox, see [here](http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/#comment-761) for more details.
+This is a polyfill to an responsive image proposal by [@MattWilcox](http://twitter.com/MattWilcox), see [here](http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/) for more details.
 
 ## Usage
 
@@ -35,3 +35,5 @@ Grab the library, jQuery and then fire away (see [here](http://pci.github.com/me
 
 ## Browser Support
 This replies on media queries (with working listeners) in javascript. Tested in latest Firefox and Chrome, but should work in Safari, Opera and IE10.
+
+Made by [@PhilIngrey](http://twitter.com/philingrey)
