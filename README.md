@@ -2,9 +2,13 @@
 
 This is a polyfill to a responsive image proposal by [@MattWilcox](http://twitter.com/MattWilcox), see [here](http://www.w3.org/community/respimg/2012/05/13/an-alternative-proposition-to-and-srcset-with-wider-scope/) for more details.
 
+## Demo
+
+See [here](http://pci.github.com/metavar_polyfill).
+
 ## Usage
 
-Grab the library, and include jQuery and then fire away! (see [here](http://pci.github.com/metavar_polyfill) for a demo):
+Grab the library, and include jQuery and then fire away!:
 
     <html>
     <head>
