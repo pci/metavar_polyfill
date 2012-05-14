@@ -21,7 +21,9 @@
 </style>
 </head>
 <body>
-  <img width='100%' src="http://placekitten.com/{case}/">
+  <h1>Meta-Variables Polyfill Demo</h1>
+  <p>Resize the browser to see the kitty change! See <a href="https://github.com/pci/metavar_polyfill">here</a> for details and source.</p>
+  <img width='75%' src="http://placekitten.com/{case}/">
   <script>
   /* MIT license - http://pci.mit-license.org */
 (function(a){function c(c){var d=null;for(var e in b[c]){d=b[c][e].mq.matches?b[c][e].value:d}a("img").each(function(){if(a(this).attr("data-oldsrc")&&a(this).attr("data-oldsrc").match("%7B"+c+"%7D")){this.src=a(this).attr("data-oldsrc").replace("%7B"+c+"%7D",d)}})}var b={};a(function(){a("head meta[name][value][media]").each(function(d,e){var f=a(e),g=f.attr("name"),h=f.attr("value"),i=f.attr("media"),j=window.matchMedia(i);if(!b[g]){b[g]=[];a("img").each(function(){console.log(this.src);if(this.src.match("%7B"+g+"%7D")){a(this).attr("data-oldsrc",this.src)}})}j.addListener(function(a){c(g)});b[g].push({mq:j,value:h});c(g)})})})(jQuery)
