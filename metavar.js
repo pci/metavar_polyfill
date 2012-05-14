@@ -46,8 +46,10 @@ $(function(){
       checkAndChange(name); 
     });
     mqs[name].push({mq: mql, value: value});
-    checkAndChange(name);
   });
+  for(var name in mqs){
+    checkAndChange(name);
+  }
 });
 
 })(jQuery);
