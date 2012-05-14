@@ -29,7 +29,7 @@ Grab the library, and include jQuery and then fire away! (see [here](http://pci.
     </head>
     <body>
       <img width='100%' src="http://placekitten.com/{case}/">
-      <script src="js/metavar.min.js">
+      <script src="js/metavar.js">
     </body>
     </html>
 
