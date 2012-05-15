@@ -18,18 +18,6 @@ Grab the library, and include jQuery and then fire away!:
       <meta name="case" value="700/700" media="only screen and (min-width:500px)"/>
       <meta name="case" value="1024/1024" media="only screen and (min-width:700px)"/>
     <title>Demo</title>
-    <style>
-      /* Webkit hack - see http://bit.ly/zucsPo */
-      @media screen and (max-width:0) {
-        .foo { }
-      }
-      @media screen and (max-width:500px) {
-        .foo { }
-      }
-      @media screen and (max-width:700px) {
-        .foo { }
-      }
-    </style>
     </head>
     <body>
       <img width='100%' src="http://placekitten.com/{case}/">
