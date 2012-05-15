@@ -38,6 +38,17 @@ Grab the library, and include jQuery and then fire away!:
     </html>
 
 ## Browser Support
-This replies on media queries (with working listeners) in javascript. Tested in latest Firefox and Chrome, but should work in Safari, Opera and IE10.
+Going from worse to best:
+### Wooden Spoon (and just as responsive)
+IE6-8, these browsers get the "{case}" folder fallback currently
+
+### Bronze (CSS media query support)
+IE9, Opera and Safari? (see Issue #1)
+
+### Silver (matchMedia & listeners)
+Firefox, IE10? and chrome, these get the full polyfill experience
+
+### Gold (native)
+None (....yet.....)
 
 Made by [@PhilIngrey](http://twitter.com/philingrey)
