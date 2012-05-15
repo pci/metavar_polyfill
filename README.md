@@ -38,7 +38,7 @@ Grab the library, and include jQuery and then fire away!:
     </html>
 
 ## Browser Support
-Going from worse to best:
+Going from worst to best:
 ### Wooden Spoon (and just as responsive)
 IE6-8, these browsers get the "{case}" folder fallback currently
 
