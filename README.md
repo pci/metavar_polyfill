@@ -27,16 +27,16 @@ Grab the library, and include jQuery and then fire away!:
 
 ## Browser Support
 Going from worst to best:
-### Wooden Spoon (and just as responsive)
+### Wooden Spoons (and just as responsive)
 IE6-8, these browsers get the "{case}" folder fallback currently
 
-### Bronze (CSS media query support)
-IE9, Opera and Safari? (see Issue #1)
+### Bronze Medalists (CSS media query support)
+IE9, Opera and Safari?, these get the correct image for their screen size when the page is loaded, but don't respond to resizing (it's on the todo list!)
 
-### Silver (matchMedia & listeners)
+### Silver Medalists (matchMedia & listeners)
 Firefox, IE10? and chrome, these get the full polyfill experience
 
-### Gold (native)
+### Gold Medalists (native)
 None (....yet.....)
 
 Made by [@PhilIngrey](http://twitter.com/philingrey)
