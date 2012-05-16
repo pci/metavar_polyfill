@@ -38,7 +38,9 @@ window.matchMedia = window.matchMedia || window.msmatchMedia || (function(doc, u
 
 (function($){
   
-var mqs = {};
+var mqs = {},
+    sc = encodeURI("{"),
+    ec = encodeURI("}");
 
 function checkAndChange(name){
   // obey the cascade! Last MQ that is true counts
@@ -47,8 +49,8 @@ function checkAndChange(name){
     latest = (mqs[name][i].mq.matches ? mqs[name][i].value : latest);
   }
   $('img').each(function(){
-    if($(this).attr("data-oldsrc") && $(this).attr("data-oldsrc").match("%7B"+name+"%7D")){
-      this.src = $(this).attr("data-oldsrc").replace("%7B"+name+"%7D", latest); 
+    if($(this).attr("data-oldsrc") && $(this).attr("data-oldsrc").match(sc+name+ec)){
+      this.src = $(this).attr("data-oldsrc").replace(sc+name+ec, latest); 
     }
   });
 }
@@ -65,8 +67,8 @@ $(function(){
       mqs[name] = [];
       $('img').each(function(){
         console.log(this.src);
-        if(this.src.match("%7B"+name+"%7D")){
-          $(this).attr("data-oldsrc",this.src);
+        if(encodeURI(this.src).match(sc+name+ec)){
+          $(this).attr("data-oldsrc",encodeURI(this.src));
         }
       });
     }
