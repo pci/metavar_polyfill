@@ -67,8 +67,8 @@ $(function(){
       mqs[name] = [];
       $('img').each(function(){
         console.log(this.src);
-        if(encodeURI(this.src).match(sc+name+ec)){
-          $(this).attr("data-oldsrc",encodeURI(this.src));
+        if(this.src.match(sc+name+ec)){
+          $(this).attr("data-oldsrc",this.src);
         }
       });
     }
